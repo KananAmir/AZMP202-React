@@ -1,0 +1,14 @@
+.btn {
+  background-color: antiquewhite;
+  border-radius: 0.5rem;
+
+  &.success {
+    background-color: teal;
+  }
+  &.danger {
+    background-color: red;
+  }
+  &.warning {
+    background-color: orange;
+  }
+}
