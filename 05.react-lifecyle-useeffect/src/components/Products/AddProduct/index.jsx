@@ -28,7 +28,9 @@ const AddProduct = ({ products, setProducts }) => {
     // console.log(product);
 
     const response = await controller.addNewData(endpoints.products, product);
+
     if (response.status === 201) {
+      setProducts([...products, product]);
       Swal.fire({
         position: "top-end",
         icon: "success",
@@ -36,9 +38,9 @@ const AddProduct = ({ products, setProducts }) => {
         showConfirmButton: false,
         timer: 1500,
       });
-    }
 
-    // e.target.reset();
+      e.target.reset();
+    }
   };
 
   return (
