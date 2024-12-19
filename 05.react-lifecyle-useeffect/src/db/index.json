@@ -1,18 +1,6 @@
 {
   "products": [
     {
-      "id": "6",
-      "title": "Solid Gold Petite Micropave ",
-      "price": 168,
-      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-      "category": "jewelery",
-      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      "rating": {
-        "rate": 3.9,
-        "count": 70
-      }
-    },
-    {
       "id": "7",
       "title": "White Gold Plated Princess",
       "price": 9.99,
@@ -179,86 +167,23 @@
         "rate": 3.6,
         "count": 145
       }
-    },
-    {
-      "id": "228b",
-      "title": "Omnis et expedita al",
-      "image": "https://www.qufuxysyg.us",
-      "price": "641",
-      "category": "women's clothing"
-    },
-    {
-      "id": "f5b2",
-      "title": "Pariatur Harum et a",
-      "image": "https://www.rizawob.co",
-      "price": "722",
-      "category": "jewelery"
-    },
-    {
-      "id": "899b",
-      "title": "Est in enim nulla i",
-      "image": "https://www.zapuwu.com",
-      "price": "743",
-      "category": "women's clothing"
-    },
-    {
-      "id": "5322",
-      "title": "Recusandae Sit eius",
-      "image": "https://www.firedoxadyro.ca",
-      "price": "679",
-      "category": "jewelery"
-    },
-    {
-      "id": "ad9a",
-      "title": "test",
-      "image": "https://www.sylacezy.mobi",
-      "price": "44",
-      "category": "women's clothing"
-    },
-    {
-      "id": "134e",
-      "title": "test test",
-      "image": "https://www.guvizyjoci.org",
-      "price": "716",
-      "category": "men's clothing"
-    },
-    {
-      "id": "3265",
-      "title": "aaaaa",
-      "image": "https://www.ceticywolux.in",
-      "price": "585",
-      "category": "electronics"
-    },
-    {
-      "id": "5220",
-      "title": "",
-      "image": "",
-      "price": 0,
-      "category": "men's clothing"
-    },
-    {
-      "id": "1894",
-      "title": "",
-      "image": "",
-      "price": 0,
-      "category": "men's clothing"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "categoryName": "men's clothing"
     },
     {
-      "id": 2,
+      "id": "2",
       "categoryName": "jewelery"
     },
     {
-      "id": 3,
+      "id": "3",
       "categoryName": "electronics"
     },
     {
-      "id": 4,
+      "id": "4",
       "categoryName": "women's clothing"
     }
   ]

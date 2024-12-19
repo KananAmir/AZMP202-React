@@ -6,7 +6,7 @@ import Table from "./Table";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-
+  const [searchQuery, setSearchQuery] = useState("");
   const getProducts = async () => {
     const data = await controller.getAllData(endpoints.products);
     setProducts(data);
@@ -15,6 +15,11 @@ const Products = () => {
     getProducts();
   }, []);
 
+  const filteredProducts = products.filter((p) =>
+    p.title.toLocaleLowerCase().includes(searchQuery)
+  );
+
+  console.log("filteredProducts", filteredProducts);
   //   useEffect(() => {
   //     controller
   //       .getAllData("products")
@@ -29,7 +34,14 @@ const Products = () => {
   return (
     <div>
       <AddProduct products={products} setProducts={setProducts} />
-      <Table products={products} setProducts={setProducts} />
+      <div style={{ margin: "1.5rem 0" }}>
+        <input
+          type="search"
+          placeholder="search product.."
+          onChange={(e) => setSearchQuery(e.target.value.trim())}
+        />
+      </div>
+      <Table products={filteredProducts} setProducts={setProducts} />
     </div>
   );
 };

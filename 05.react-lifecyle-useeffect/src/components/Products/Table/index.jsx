@@ -27,7 +27,7 @@ const Table = ({ products, setProducts }) => {
         </tr>
       </thead>
       <tbody>
-        {products.length &&
+        {products &&
           products.map((p) => {
             return (
               <tr key={p.id}>
