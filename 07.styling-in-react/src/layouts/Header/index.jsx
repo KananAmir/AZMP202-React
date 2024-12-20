@@ -10,7 +10,12 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <a href="#">Services</a>
+                <a
+                  href="#"
+                  className={`${styles["bg-red"]} ${styles["text-green"]}}`}
+                >
+                  Services
+                </a>
               </li>
               <li>
                 <a href="#">Projects</a>
