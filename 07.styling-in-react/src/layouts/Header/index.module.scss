@@ -1,0 +1,29 @@
+header {
+  background-color: #000;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    .logo {
+      color: #fff;
+      text-transform: uppercase;
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 1rem;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    .contact-btn {
+      background-color: teal;
+      color: #fff;
+      border-radius: 1.5rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid;
+    }
+  }
+}
