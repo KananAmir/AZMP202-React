@@ -2,13 +2,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
 
 import { FaRegEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Swal from "sweetalert2";
 
@@ -30,8 +29,27 @@ const query = {
 const TodoApp = () => {
   const [todos, setTodos] = useState([]);
   const [todoText, setTodoText] = useState("");
-  const [errorStatus, setErrorStatus] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const [filterQuery, setFilterQuery] = useState(query.ALL);
+
+
+  //component mounting
+  useEffect(() => {
+    const initialTodos = localStorage.getItem("todos");
+
+    if (Array.isArray(initialTodos)) {
+      setTodos(JSON.parse(localStorage.getItem("todos")));
+    } else {
+      localStorage.setItem("todos", JSON.stringify([]));
+      setTodos([]);
+    }
+  }, []);
+
+
+  //component updating
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const filteredTodos = todos.filter((todo) => {
     if (filterQuery === query.ALL) {
@@ -45,16 +63,14 @@ const TodoApp = () => {
 
   const handleAddTodo = () => {
     if (todoText) {
-      const todo = new Todo(todoText);
+      const todo = new Todo(todoText.trim());
 
       setTodos([...todos, todo]);
 
-      console.log(todos);
-
       setTodoText("");
-      setErrorStatus(false);
+      setErrorMessage("");
     } else {
-      setErrorStatus(true);
+      setErrorMessage("Please enter a valid todo!");
     }
   };
 
@@ -99,12 +115,20 @@ const TodoApp = () => {
       }
     });
   };
+  // const handleToggleCompleted = (id) => {
+  //   const found = todos.find((todo) => todo.id === id);
+
+  //   found.isCompleted = !found.isCompleted;
+
+  //   setTodos([...todos]);
+  // };
+
   const handleToggleCompleted = (id) => {
-    const found = todos.find((todo) => todo.id === id);
-
-    found.isCompleted = !found.isCompleted;
-
-    setTodos([...todos]);
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) =>
+        todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
+      )
+    );
   };
   return (
     <div>
@@ -116,18 +140,18 @@ const TodoApp = () => {
               <Form.Control
                 placeholder="add todo here.."
                 onChange={(e) => {
-                  setTodoText(e.target.value.trim());
+                  setTodoText(e.target.value);
                 }}
                 value={todoText}
-                className={errorStatus && "border-danger border-2"}
+                className={errorMessage && "border-danger border-2"}
               />
               <Button variant="outline-primary" onClick={handleAddTodo}>
                 Add
               </Button>
             </div>
-            {errorStatus && (
+            {errorMessage && (
               <p className="error-message text-center mt-3 text-danger">
-                Fill Input!
+                {errorMessage}
               </p>
             )}
           </Col>
@@ -163,6 +187,7 @@ const TodoApp = () => {
                 filteredTodos.map((todo) => {
                   return (
                     <ListGroup.Item
+                      key={todo.id}
                       action
                       variant="success"
                       className="d-flex justify-content-between align-items-center mb-3"
@@ -174,7 +199,7 @@ const TodoApp = () => {
                           onChange={() => handleToggleCompleted(todo.id)}
                         />
 
-                        <span className={todo.isCompleted && "completed"}>
+                        <span className={todo.isCompleted ? "completed" : ""}>
                           {todo.todoText}
                         </span>
                       </div>
