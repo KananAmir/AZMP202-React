@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Header from "../../layouts/Client/Header";
+import Header from "../../../layouts/Client/Header";
 
 const ClientLayout = () => {
   return (

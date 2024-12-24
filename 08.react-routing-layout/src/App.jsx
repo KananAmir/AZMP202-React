@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import ClientLayout from "./pages/Client";
-import AdminLayout from "./pages/Admin";
 import Home from "./pages/Client/Home";
 import Dashboaard from "./pages/Admin/Dashboard";
 import Contact from "./pages/Client/Contact";
@@ -10,6 +8,8 @@ import AdminProducts from "./pages/Admin/Products";
 import Users from "./pages/Admin/Users";
 import ProductDetails from "./pages/Client/ProductDetails";
 import NotFound from "./components/NotFound";
+import ClientLayout from "./components/Client/ClientLayout";
+import AdminLayout from "./components/Admin/AdminLayout";
 
 function App() {
   return (
