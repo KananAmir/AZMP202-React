@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  background-color: teal;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+a.text-white {
+  color: #fff;
+}
+a.active {
+  color: orange;
+}
