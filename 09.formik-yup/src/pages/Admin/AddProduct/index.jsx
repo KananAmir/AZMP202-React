@@ -1,26 +1,29 @@
 import { useFormik } from "formik";
-import { ProductSchema } from "../../../validations/product.validation";
+import { ProductSchema } from "../../../validations/product.validation"; // You may need to update the validation schema
 import controller from "../../../services";
 import { endpoints } from "../../../services/constants";
+import styles from "./index.module.scss"; // Importing SCSS file for styling
+
 const AddProduct = () => {
   const formik = useFormik({
     initialValues: {
       title: "",
+      brand: "",
       price: "",
       thumbnail: "",
       description: "",
+      stock: "",
     },
     onSubmit: async (values) => {
-      console.log(values);
-
       const res = await controller.addNewData(endpoints.products, values);
+
       formik.resetForm();
     },
-    validationSchema: ProductSchema,
+    validationSchema: ProductSchema, // Update your schema to handle the new fields
   });
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form className={styles.form} onSubmit={formik.handleSubmit}>
       <label htmlFor="title">Title</label>
       <input
         id="title"
@@ -28,12 +31,25 @@ const AddProduct = () => {
         type="text"
         onChange={formik.handleChange}
         value={formik.values.title}
+        className={styles.input}
       />
       {formik.errors.title && formik.touched.title && (
-        <p style={{ color: "red" }}>{formik.errors.title}</p>
+        <p className={styles.error}>{formik.errors.title}</p>
       )}
-      <br />
-      <br />
+
+      <label htmlFor="brand">Brand</label>
+      <input
+        id="brand"
+        name="brand"
+        type="text"
+        onChange={formik.handleChange}
+        value={formik.values.brand}
+        className={styles.input}
+      />
+      {formik.errors.brand && formik.touched.brand && (
+        <p className={styles.error}>{formik.errors.brand}</p>
+      )}
+
       <label htmlFor="price">Price</label>
       <input
         id="price"
@@ -41,44 +57,54 @@ const AddProduct = () => {
         type="number"
         onChange={formik.handleChange}
         value={formik.values.price}
+        className={styles.input}
       />
       {formik.errors.price && formik.touched.price && (
-        <p style={{ color: "red" }}>{formik.errors.price}</p>
+        <p className={styles.error}>{formik.errors.price}</p>
       )}
-      {/* {console.log(formik.errors)} */}
-      {/* {console.log(formik.touched)} */}
 
-      <br />
-      <br />
-      <label htmlFor="thumbnail">Image Url</label>
+      <label htmlFor="thumbnail">Image URL</label>
       <input
         id="thumbnail"
         name="thumbnail"
         type="url"
         onChange={formik.handleChange}
         value={formik.values.thumbnail}
+        className={styles.input}
       />
       {formik.errors.thumbnail && formik.touched.thumbnail && (
-        <p style={{ color: "red" }}>{formik.errors.thumbnail}</p>
+        <p className={styles.error}>{formik.errors.thumbnail}</p>
       )}
-      <br />
-      <br />
-      <label htmlFor="description">Description</label>
 
+      <label htmlFor="description">Description</label>
       <textarea
         name="description"
         id="description"
         onChange={formik.handleChange}
         value={formik.values.description}
         rows={5}
-        cols={50}
+        className={styles.textarea}
       ></textarea>
       {formik.errors.description && formik.touched.description && (
-        <p style={{ color: "red" }}>{formik.errors.description}</p>
+        <p className={styles.error}>{formik.errors.description}</p>
       )}
-      <br />
-      <br />
-      <button type="submit">Submit</button>
+
+      <label htmlFor="stock">Stock</label>
+      <input
+        id="stock"
+        name="stock"
+        type="number"
+        onChange={formik.handleChange}
+        value={formik.values.stock}
+        className={styles.input}
+      />
+      {formik.errors.stock && formik.touched.stock && (
+        <p className={styles.error}>{formik.errors.stock}</p>
+      )}
+
+      <button type="submit" className={styles.submitButton}>
+        Submit
+      </button>
     </form>
   );
 };

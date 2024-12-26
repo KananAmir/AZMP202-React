@@ -13,13 +13,9 @@
         "https://fdn.gsmarena.com/imgroot//reviews/17/apple-iphone-x/lifestyle/-728w2/gsmarena_019.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 55,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "ios"
-      ],
+      "tags": ["mobile phone", "smartphone", "ios"],
       "rating": 5
     },
     {
@@ -35,13 +31,9 @@
         "https://fdn.gsmarena.com/imgroot/reviews/19/apple-iphone-11/lifestyle/-1024w2/gsmarena_007.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 42,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "ios"
-      ],
+      "tags": ["mobile phone", "smartphone", "ios"],
       "rating": 4
     },
     {
@@ -57,13 +49,9 @@
         "https://fdn.gsmarena.com/imgroot/reviews/22/apple-iphone-14-pro/lifestyle/-1024w2/gsmarena_005.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 50,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "ios"
-      ],
+      "tags": ["mobile phone", "smartphone", "ios"],
       "rating": 5
     },
     {
@@ -79,13 +67,9 @@
         "https://fdn.gsmarena.com/imgroot/reviews/23/samsung-galaxy-s23-ultra/lifestyle/-1024w2/gsmarena_017.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 25,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "android"
-      ],
+      "tags": ["mobile phone", "smartphone", "android"],
       "comments": []
     },
     {
@@ -101,13 +85,9 @@
         "https://fdn.gsmarena.com/imgroot/reviews/22/samsung-galaxy-z-fold4/lifestyle/-1024w2/gsmarena_035.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold4-5g.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 30,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "android"
-      ],
+      "tags": ["mobile phone", "smartphone", "android"],
       "comments": []
     },
     {
@@ -123,13 +103,9 @@
         "https://fdn.gsmarena.com/imgroot/reviews/22/samsung-galaxy-a53-5g/lifestyle/-1024w2/gsmarena_004.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a73-5g.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 20,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "android"
-      ],
+      "tags": ["mobile phone", "smartphone", "android"],
       "comments": []
     },
     {
@@ -143,13 +119,9 @@
         "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-nova10-yough-2.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova10-yough.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 40,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "android"
-      ],
+      "tags": ["mobile phone", "smartphone", "android"],
       "comments": []
     },
     {
@@ -165,14 +137,9 @@
         "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-mate-50-3.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-rs-porsche-design.jpg",
-      "category": "smartphones",
+      "category": "1",
       "stock": 50,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "android",
-        "huawei"
-      ],
+      "tags": ["mobile phone", "smartphone", "android", "huawei"],
       "comments": []
     },
     {
@@ -187,14 +154,9 @@
         "https://m.media-amazon.com/images/I/51FmT4HMtaL._AC_SX569_.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-6d.jpg",
-      "category": "Smartphones",
+      "category": "1",
       "stock": 45,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "android",
-        "asus"
-      ],
+      "tags": ["mobile phone", "smartphone", "android", "asus"],
       "rating": 4.4
     },
     {
@@ -209,14 +171,9 @@
         "https://fdn2.gsmarena.com/vv/pics/asus/asus-zenfone7-002.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone7-pro-zs670ks-zs671ks.jpg",
-      "category": "Smartphones",
+      "category": "1",
       "stock": 60,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "android",
-        "asus"
-      ],
+      "tags": ["mobile phone", "smartphone", "android", "asus"],
       "rating": 4.2
     },
     {
@@ -233,14 +190,9 @@
         "https://cdn1.smartprix.com/rx-iEX8mBOvh-w420-h420/asus-tuf-gaming-a17.webp"
       ],
       "thumbnail": "https://cdn1.smartprix.com/rx-i4TCnbvn5-w420-h420/asus-tuf-gaming-a17.webp",
-      "category": "Laptops",
+      "category": "2",
       "stock": 60,
-      "tags": [
-        "gaming",
-        "laptop",
-        "windows",
-        "asus"
-      ],
+      "tags": ["gaming", "laptop", "windows", "asus"],
       "rating": 4.6
     },
     {
@@ -256,14 +208,9 @@
         "https://cdn1.smartprix.com/rx-i5MlTfc95-w420-h420/lenovo-ideapad-slim.webp"
       ],
       "thumbnail": "https://cdn1.smartprix.com/rx-ial6kx7ni-w420-h420/lenovo-ideapad-slim.webp",
-      "category": "Laptops",
+      "category": "2",
       "stock": 20,
-      "tags": [
-        "office",
-        "laptop",
-        "windows",
-        "lenovo"
-      ],
+      "tags": ["office", "laptop", "windows", "lenovo"],
       "rating": 4.3
     },
     {
@@ -279,14 +226,9 @@
         "https://cdn1.smartprix.com/rx-ixw8plkUF-w420-h420/hp-pavilion-15-ec200.webp"
       ],
       "thumbnail": "https://cdn1.smartprix.com/rx-ixw8plkUF-w420-h420/hp-pavilion-15-ec200.webp",
-      "category": "Laptops",
+      "category": "2",
       "stock": 14,
-      "tags": [
-        "gaming",
-        "laptop",
-        "windows",
-        "hp"
-      ],
+      "tags": ["gaming", "laptop", "windows", "hp"],
       "rating": 4.4
     },
     {
@@ -302,14 +244,9 @@
         "https://cdn1.smartprix.com/rx-iSC99mITO-w420-h420/acer-aspire-7-a715-5.webp"
       ],
       "thumbnail": "https://cdn1.smartprix.com/rx-ie0dZGrf5-w420-h420/acer-aspire-7-a715-5.webp",
-      "category": "Laptops",
+      "category": "2",
       "stock": 22,
-      "tags": [
-        "gaming",
-        "laptop",
-        "windows",
-        "acer"
-      ],
+      "tags": ["gaming", "laptop", "windows", "acer"],
       "rating": 4.6
     },
     {
@@ -324,14 +261,9 @@
         "https://cdn1.smartprix.com/rx-iVqbv51AS-w420-h420/msi-thin-gf63-11sc-8.webp"
       ],
       "thumbnail": "https://cdn1.smartprix.com/rx-iIL0bISnc-w420-h420/msi-gaming-katana-gf.webp",
-      "category": "Laptops",
+      "category": "2",
       "stock": 22,
-      "tags": [
-        "gaming",
-        "laptop",
-        "windows",
-        "msi"
-      ],
+      "tags": ["gaming", "laptop", "windows", "msi"],
       "rating": 4.5
     },
     {
@@ -346,13 +278,9 @@
         "https://fdn2.gsmarena.com/vv/pics/apple/apple-watch-8se-2022-2.jpg"
       ],
       "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-7-aluminum.jpg",
-      "category": "Accessories",
+      "category": "3",
       "stock": 16,
-      "tags": [
-        "digital",
-        "watch",
-        "apple"
-      ],
+      "tags": ["digital", "watch", "apple"],
       "rating": 4.7
     },
     {
@@ -367,13 +295,9 @@
         "https://fdn2.gsmarena.com/vv/pics/apple/apple-watch-8se-2022-2.jpg"
       ],
       "thumbnail": "https://360view.hum3d.com/zoom/Apple/Apple_Watch_38mm_Rose_Gold_Case_with_Gray_Modern_Buckle_1000_0001.jpg",
-      "category": "Accessories",
+      "category": "3",
       "stock": 16,
-      "tags": [
-        "digital",
-        "watch",
-        "apple"
-      ],
+      "tags": ["digital", "watch", "apple"],
       "rating": 4.8
     },
     {
@@ -389,13 +313,9 @@
         "https://m.media-amazon.com/images/I/81tSaYQ32rL._AC_SX522_.jpg"
       ],
       "thumbnail": "https://m.media-amazon.com/images/I/51-+O3-wFxL._AC_SX522_.jpg",
-      "category": "Accessories",
+      "category": "3",
       "stock": 18,
-      "tags": [
-        "earphone",
-        "headphone",
-        "beats"
-      ],
+      "tags": ["earphone", "headphone", "beats"],
       "rating": 4.5
     },
     {
@@ -410,13 +330,9 @@
         "https://m.media-amazon.com/images/I/61zJiWdOzFS._AC_SX522_.jpg"
       ],
       "thumbnail": "https://m.media-amazon.com/images/I/51bRSWrEc7S._AC_SX522_.jpg",
-      "category": "Accessories",
+      "category": "3",
       "stock": 26,
-      "tags": [
-        "earphone",
-        "headphone",
-        "beats"
-      ],
+      "tags": ["earphone", "headphone", "beats"],
       "rating": 4.3
     },
     {
@@ -431,44 +347,10 @@
         "https://m.media-amazon.com/images/I/71tysOlpaYL._AC_SX522_.jpg"
       ],
       "thumbnail": "https://m.media-amazon.com/images/I/61ziCBwTtEL._AC_SX522_.jpg",
-      "category": "Accessories",
+      "category": "3",
       "stock": 30,
-      "tags": [
-        "earphone",
-        "headphone",
-        "apple",
-        "earbuds"
-      ],
+      "tags": ["earphone", "headphone", "apple", "earbuds"],
       "rating": 4.8
-    },
-    {
-      "id": "6403c49deb0d73a0453b6c6e",
-      "title": "iPhone X 128GB",
-      "brand": "Apple",
-      "description": "The iPhone X was Apple's flagship 10th anniversary iPhone featuring a 5.8-inch OLED display, facial recognition and 3D camera functionality, a glass body, and an A11 Bionic processor.",
-      "price": 960,
-      "images": [
-        "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg",
-        "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-2.jpg",
-        "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-4.jpg",
-        "https://fdn.gsmarena.com/imgroot//reviews/17/apple-iphone-x/lifestyle/-728w2/gsmarena_019.jpg"
-      ],
-      "thumbnail": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg",
-      "category": "smartphones",
-      "stock": 55,
-      "tags": [
-        "mobile phone",
-        "smartphone",
-        "ios"
-      ],
-      "rating": 5
-    },
-    {
-      "id": "41da",
-      "title": "testtttttttt",
-      "price": 485,
-      "thumbnail": "https://fdn.gsmarena.com/imgroot//reviews/17/apple-iphone-x/lifestyle/-728w2/gsmarena_019.jpg",
-      "description": "lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor"
     }
   ],
   "categories": [
