@@ -1,31 +1,38 @@
 import { NavLink } from "react-router-dom";
-
 import styles from "./index.module.scss";
 import { useContext } from "react";
 import { FavoritesContext } from "../../context/FavoritesContext";
 import ChangeTheme from "../../components/ChangeTheme";
 
 const Header = () => {
+  const { favorites } = useContext(FavoritesContext);
 
-  const {favorites} = useContext(FavoritesContext)
   return (
-    <header>
+    <header id={styles.header}>
       <nav>
-        <ul>
+        <ul className={styles.navList}>
           <li>
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to="/" className={styles.navLink}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/about"}>About</NavLink>
+            <NavLink to="/about" className={styles.navLink}>
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/products"}>Products</NavLink>
+            <NavLink to="/products" className={styles.navLink}>
+              Products
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/favorites"}>Favorites <sup style={{color: "red", fontSize: "1.2rem"}}>{favorites.length}</sup></NavLink>
+            <NavLink to="/favorites" className={styles.navLink}>
+              Favorites <sup className={styles.favoriteCount}>{favorites.length}</sup>
+            </NavLink>
           </li>
           <li>
-            <ChangeTheme/>
+            <ChangeTheme />
           </li>
         </ul>
       </nav>

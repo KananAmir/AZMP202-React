@@ -1,13 +1,34 @@
-header {
+#header {
   background-color: beige;
   padding: 1rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+
   nav {
-    ul {
+    ul.navList {
       display: flex;
+      align-items: center;
+      justify-content: center;
       list-style: none;
       gap: 2rem;
+      padding: 0;
+      margin: 0;
+
+      li {
+        a.navLink {
+          text-decoration: none;
+          color: purple;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+
+        sup.favoriteCount {
+          color: red;
+          font-size: 1rem;
+          margin-left: 4px;
+        }
+      }
     }
   }
 }

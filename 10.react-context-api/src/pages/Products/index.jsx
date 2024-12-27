@@ -5,70 +5,68 @@ const { Meta } = Card;
 import { Link } from "react-router-dom"
 import { BASE_URL } from "../../services/constants";
 
-
 import { FaHeart } from "react-icons/fa6";
-
 import { FaRegHeart } from "react-icons/fa6";
 import { FavoritesContext } from "../../context/FavoritesContext";
 
 const Products = () => {
   const [products, setProducts] = useState(null);
-
-
-  const { toggleFavorites, favorites } = useContext(FavoritesContext)
-
+  const { toggleFavorites, favorites } = useContext(FavoritesContext);
 
   const getProducts = async () => {
     try {
       const { data } = await axios(`${BASE_URL}products`);
       console.log(data);
-
       setProducts(data);
     } catch (error) {
       console.log(error);
     }
   };
+
   useEffect(() => {
     getProducts();
   }, []);
 
-  return <>
-
-
-    <Row gutter={16}>
-      {products && products.map((p) => {
-        return (<Col className="gutter-row" span={6} key={p.id}>
-          <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={<img alt={p.title} src={p.image} />}
-          >
-
-            <Meta title={<Link to={`${p.id}`}>{p.title}</Link>} description={<div>
-
-              <p>Price: $ {p.price}</p>
-              <p>{p.description.slice(0, 50)}</p>
-              <span>
-
-
-              <Button  onClick={() => toggleFavorites(p)}>
-                 {favorites.find((q) => q.id === p.id) ? <FaHeart/> : <FaRegHeart />}
-              </Button>
-
-
-                {/* <FaRegHeart onClick={() => toggleFavorites(p)} /> */}
-                {/* <FaHeart /> */}
-
-              </span>
-            </div>} />
-          </Card>
-        </Col>)
-      })}
-    </Row>
-
-
-
-  </>;
+  return (
+    <div style={{ padding: "20px", backgroundColor: "#f5f5f5" }}>
+      <Row gutter={[16, 16]} justify="center">
+        {products && products.map((p) => (
+          <Col xs={24} sm={12} md={8} lg={6} key={p.id}>
+            <Card
+              hoverable
+              style={{ borderRadius: "8px", overflow: "hidden" }}
+              cover={
+                <img
+                  alt={p.title}
+                  src={p.image}
+                  style={{ height: "200px", objectFit: "cover" }}
+                />
+              }
+            >
+              <Meta
+                title={<Link to={`${p.id}`}>{p.title}</Link>}
+                description={
+                  <div style={{ marginTop: "10px" }}>
+                    <p style={{ marginBottom: "5px" }}>Price: $ {p.price}</p>
+                    <p style={{ marginBottom: "10px", color: "#555" }}>
+                      {p.description.slice(0, 50)}...
+                    </p>
+                    <Button
+                      type="text"
+                      onClick={() => toggleFavorites(p)}
+                      style={{ color: favorites.find((q) => q.id === p.id) ? "#ff4d4f" : "#8c8c8c" }}
+                    >
+                      {favorites.find((q) => q.id === p.id) ? <FaHeart /> : <FaRegHeart />}
+                    </Button>
+                  </div>
+                }
+              />
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </div>
+  );
 };
 
 export default Products;
