@@ -1,0 +1,13 @@
+header {
+  background-color: beige;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+  }
+}
