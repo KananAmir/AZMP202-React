@@ -8,6 +8,7 @@ import MainLayout from "./layouts/MainLayout";
 import Favorites from "./pages/Favorites";
 import { useContext } from "react";
 import { ThemeContext } from "./context/TeamContext";
+import Basket from "./pages/Basket";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/basket" element={<Basket />} />
         </Route>
       </Routes>
     </div>

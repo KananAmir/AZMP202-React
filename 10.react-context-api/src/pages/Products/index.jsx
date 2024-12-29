@@ -8,11 +8,12 @@ import { BASE_URL } from "../../services/constants";
 import { FaHeart } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa6";
 import { FavoritesContext } from "../../context/FavoritesContext";
+import { BasketContext } from "../../context/BasketContext";
 
 const Products = () => {
   const [products, setProducts] = useState(null);
   const { toggleFavorites, favorites } = useContext(FavoritesContext);
-
+  const { addToBasket } = useContext(BasketContext)
   const getProducts = async () => {
     try {
       const { data } = await axios(`${BASE_URL}products`);
@@ -58,6 +59,8 @@ const Products = () => {
                     >
                       {favorites.find((q) => q.id === p.id) ? <FaHeart /> : <FaRegHeart />}
                     </Button>
+                    <br />
+                    <Button onClick={() => { addToBasket(p) }}>Add to Cart</Button>
                   </div>
                 }
               />
