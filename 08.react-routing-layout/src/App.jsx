@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Routes>
-        //client layout
+        {/* client layout */}
         <Route path="/" element={<ClientLayout />}>
           <Route index element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -27,7 +27,7 @@ function App() {
             <Route path=":id" element={<ProductDetails />} />
           </Route>
         </Route>
-        //admin layout
+        {/* admin layout */}
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Dashboaard />} />
           <Route path="products" element={<AdminProducts />} />

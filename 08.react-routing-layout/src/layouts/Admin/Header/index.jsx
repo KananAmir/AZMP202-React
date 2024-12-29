@@ -11,13 +11,13 @@ const AdminHeader = () => {
           <nav>
             <ul>
               <li>
-                <NavLink to={"/admin"}>Dashboard</NavLink>
+                <NavLink to={"/admin"} className={({ isActive }) => (isActive ? styles.active : "")} end>Dashboard</NavLink>
               </li>
               <li>
-                <NavLink to={"/admin/users"}>Users</NavLink>
+                <NavLink to={"/admin/users"} className={({ isActive }) => (isActive ? styles.active : "")}>Users</NavLink>
               </li>
               <li>
-                <NavLink to={"/admin/products"}>Products</NavLink>
+                <NavLink to={"/admin/products"} className={({ isActive }) => (isActive ? styles.active : "")}>Products</NavLink>
               </li>
             </ul>
           </nav>

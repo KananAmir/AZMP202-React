@@ -16,6 +16,9 @@ header {
       li {
         a {
           color: #fff;
+          &.active {
+            color: orange;
+          }
         }
       }
     }
