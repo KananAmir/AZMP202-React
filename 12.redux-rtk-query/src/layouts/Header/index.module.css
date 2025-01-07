@@ -1,0 +1,14 @@
+header {
+  height: 80px;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0 3rem;
+}
