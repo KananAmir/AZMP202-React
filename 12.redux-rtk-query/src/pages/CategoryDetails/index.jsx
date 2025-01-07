@@ -20,7 +20,8 @@ const CategoryDetails = () => {
 
     return (
         <div>
-            <h1>Category Name: {category.name}</h1>
+            <h2>Category Name: {category.name}</h2>
+            <p>{category.description}</p>
         </div>
     )
 }

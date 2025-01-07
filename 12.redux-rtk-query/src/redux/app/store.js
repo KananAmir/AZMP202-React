@@ -3,8 +3,10 @@ import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import { categoriesApi } from "../services/categoriesApi";
 
+import wishlistReducer from "../features/wishlistSlice";
 export const store = configureStore({
   reducer: {
+    wishlist: wishlistReducer,
     // Add the generated reducer as a specific top-level slice
     [categoriesApi.reducerPath]: categoriesApi.reducer,
   },
